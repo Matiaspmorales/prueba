@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS pacientes (
     nombres VARCHAR(100) NOT NULL,
     apellidos VARCHAR(100) NOT NULL,
     fecha_nacimiento DATE NOT NULL,
-    genero ENUM('M', 'F') NOT NULL,
+    genero ENUM('M', 'F','Otro') NOT NULL,
     direccion VARCHAR(255) NOT NULL,
     telefono VARCHAR(20) NOT NULL,
     fecha_registro DATETIME DEFAULT CURRENT_TIMESTAMP

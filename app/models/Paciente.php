@@ -69,6 +69,21 @@ class Paciente {
     }
 
 
+    public function obtenerInforme(){
+        
+        $consulta_total = $this->pdo->query('SELECT COUNT(*) as total FROM pacientes');
+        $total = $consulta_total->fetch(PDO::FETCH_ASSOC)['total'];
+
+        $consulta_genero = $this->pdo->query('SELECT genero, COUNT(*) as cantidad FROM pacientes GROUP BY genero');
+        $genero = $consulta_genero->fetchALL(PDO::FETCH_ASSOC);
+
+        return [
+            'total' => $total,
+            'por_genero' => $genero
+        ];
+    }   
+
+
 }
 
 ?>

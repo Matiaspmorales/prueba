@@ -21,6 +21,8 @@ if ($accion === 'listar'){
     $controlador->actualizar();
 }elseif ($accion === "eliminar") {
     $controlador->eliminar();
+} elseif($accion === 'informe'){
+    $controlador->informe();
 }else {
     echo "Página no encontrada (Error 404).";
 }

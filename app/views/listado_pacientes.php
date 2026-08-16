@@ -13,6 +13,7 @@
             <div class="d-flex justify-content-between align-items-center mb-4">
                 <h2 class="text-primary m-0">Listado de Pacientes</h2>
                 <a href="index.php?accion=crear" class="btn btn-success">+ Registrar paciente</a>
+                <a href="index.php?accion=informe" class="btn btn-info text-white">Ver Informe</a>
             </div>
 
             <div class="table-responsive">

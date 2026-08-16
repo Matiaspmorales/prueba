@@ -62,9 +62,11 @@ class PacienteController {
         }
     }
 
+    public function informe(){
+        $modelo = new Paciente($this->db);
+        $estadisticas = $modelo->obtenerInforme();
+        require_once "views/informe.php";
+    }
 }
-
-
-
 
 ?>
