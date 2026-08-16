@@ -2,7 +2,7 @@
    git clone https://github.com/Matiaspmorales/prueba.git
 
 2. Ingresar a la carpeta del proyecto:
-   cd pruebaTecnica
+   cd prueba
 
 3. Para ejecutar el programa debe tener Docker instalado y en ejecución.
 
