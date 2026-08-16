@@ -1,5 +1,5 @@
 1. Clonar el repositorio:
-   git clone https://github.com/Matiaspmorales/pruebaTecnica.git
+   git clone https://github.com/Matiaspmorales/prueba.git
 
 2. Ingresar a la carpeta del proyecto:
    cd pruebaTecnica
