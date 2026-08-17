@@ -12,7 +12,7 @@ class Paciente {
         $consulta = $this->pdo->prepare($query);
         $consulta->execute();
 
-        return $consulta->fetchALL(PDO::FETCH_ASSOC);
+        return $consulta->fetchAll(PDO::FETCH_ASSOC);
     }
 
     public function insertar($datos){
@@ -75,7 +75,7 @@ class Paciente {
         $total = $consulta_total->fetch(PDO::FETCH_ASSOC)['total'];
 
         $consulta_genero = $this->pdo->query('SELECT genero, COUNT(*) as cantidad FROM pacientes GROUP BY genero');
-        $genero = $consulta_genero->fetchALL(PDO::FETCH_ASSOC);
+        $genero = $consulta_genero->fetchAll(PDO::FETCH_ASSOC);
 
         return [
             'total' => $total,
