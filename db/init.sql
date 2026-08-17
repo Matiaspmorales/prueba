@@ -11,4 +11,4 @@ CREATE TABLE IF NOT EXISTS pacientes (
 );
 
 
-INSERT INTO pacientes (id, rut, nombres, apellidos, fecha_nacimiento, genero, direccion, telefono) VALUES (UUID(),'12.345.678-9', 'Juan', 'Perez','2001-04-23', 'M', 'Anonimo 123', '+56912345678');
+INSERT INTO pacientes (id, rut, nombres, apellidos, fecha_nacimiento, genero, direccion, telefono) VALUES (UUID(),'12.345.678-1', 'Juan', 'Perez','2001-04-23', 'M', 'Anonimo 123', '+56912345678');

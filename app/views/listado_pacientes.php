@@ -25,6 +25,7 @@
                             <th>Apellidos</th>
                             <th>Fecha de Nacimiento</th>
                             <th>Género</th>
+                            <th>dirección</th>
                             <th>Teléfono</th>
                             <th>Fecha y hora de registro</th>
                             <th class="text-center">Acciones</th>
@@ -39,6 +40,7 @@
                                     <td><?php echo $paciente['apellidos']; ?></td>
                                     <td><?php echo $paciente['fecha_nacimiento']; ?></td>
                                     <td><?php echo $paciente['genero']; ?></td>
+                                    <td> <?php echo $paciente['direccion']; ?>  </td>
                                     <td><?php echo $paciente['telefono']; ?></td>
                                     <td><?php echo $paciente['fecha_registro']; ?></td>
                                     <td class="text-center">
